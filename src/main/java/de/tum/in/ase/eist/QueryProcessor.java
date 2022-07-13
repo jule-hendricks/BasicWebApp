@@ -16,11 +16,10 @@ public class QueryProcessor {
         }
         else if (query.contains("plus")) {
             String[] wordList = query.split(" ");
-            int intOfWord;
             int sum = 0;
             for (String word: wordList) {
                 try {
-                    intOfWord = Integer.parseInt(word);
+                    int intOfWord = Integer.parseInt(word);
                     sum += intOfWord;
                 }
                 catch (Exception e) {
